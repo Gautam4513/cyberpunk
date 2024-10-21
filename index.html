@@ -6,8 +6,36 @@
   <title>Cyburpunk</title>
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <canvas class="absolute top-0 left-0 w-full h-screen"></canvas>
+<body class="overflow-x-hidden">
+  <div class="main relative bg-black w-full h-screen">
+    <nav class="fixed top-1 w-full z-10 ">
+      <div class="flex justify-between items-center w-full px-10">
+        <div class="w-32 mix-blend-screen"><img src="./3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.webp" alt=""></div>
+        <div class="">
+        <ul class="hidden md:flex text-white  space-x-6 text-sm font-medium">
+          <li><a href="#" class="hover:text-blue-400 hover:filter hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] cursor-pointer transition-all duration-300">Games</a></li>
+          <li><a href="#" class="hover:text-blue-400 hover:filter hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] cursor-pointer transition-all duration-300">News</a></li>
+          <li><a href="#" class="hover:text-blue-400 hover:filter hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] cursor-pointer transition-all duration-300">Community</a></li>
+          <li><a href="#" class="hover:text-blue-400 hover:filter hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] cursor-pointer transition-all duration-300">Merchandise</a></li>
+          <li><a href="#" class="hover:text-blue-400 hover:filter hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] cursor-pointer transition-all duration-300">Support</a></li>
+        </ul>
+        <button class="md:hidden text-white hover:text-blue-400 hover:filter hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        </div>
+      </div>
+    </nav>
+    <div class="img absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 mix-blend-screen opacity-100 min-w-96 overflow-hidden">
+      <img src="./3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.webp" alt="">
+    </div>
+    <canvas class="absolute top-0 left-0 w-full h-full"></canvas>
+  </div>
+  <div class="w-full h-screen bg-[#DADADA]">
+    <div class="w-full h-96 bg-gradient-to-b from-black to-[#DADADA]"></div>
+  </div>
+  
   <script type="module" src="/main.js"></script>
 </body>
 </html>
