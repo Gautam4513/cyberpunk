@@ -65,7 +65,7 @@ rgbShiftPass.uniforms['amount'].value = 0.003;
 composer.addPass(rgbShiftPass);
 //add event listener for mouse movement
 window.addEventListener("mousemove",(event)=>{
-  gsap.to(model.rotation,{
+  gsap.to(model.rotation , {
     y:((event.clientX/window.innerWidth)-0.5)*Math.PI*0.2,
     x:((event.clientY/window.innerHeight)-0.5)*Math.PI*0.2,
     duration:0.2,
